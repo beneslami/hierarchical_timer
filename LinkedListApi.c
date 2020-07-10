@@ -20,6 +20,11 @@ get_singly_ll(ll_t* ll){
   return ll;
 }
 
+int
+get_singly_ll_node_count(ll_t* ll){
+  return ll->node_count;
+}
+
 ll_node*
 get_singly_ll_head(ll_t* ll){
   return ll->head;

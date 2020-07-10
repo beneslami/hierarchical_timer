@@ -33,7 +33,8 @@ void
 decrease_node_count(ll_t*);
 void
 increase_node_count(ll_t*);
-
+int
+get_singly_ll_node_count(ll_t*); 
 /* Macros */
 #define ITERATE_LIST_BEGIN(list_ptr, node_ptr)      \
   {                                                 \
