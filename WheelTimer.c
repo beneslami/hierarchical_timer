@@ -84,6 +84,9 @@ wheel_fn(void *arg){
                 hour_cycle_no++;
               }
               int sec_cycle_no = ( wt_elem->time_interval - (hour_cycle_no*3600) - (min_cycle_no*60) ) + current_time->second;
+              if(sec_cycle_no < 0){
+                sec_cycle_no = min_cycle_no*60 + sec_cycle_no;
+              }
               if(sec_cycle_no > 60){
                 sec_cycle_no = sec_cycle_no % 60;
                 min_cycle_no++;
